@@ -51,50 +51,53 @@ footer {
   }
   .waves {
     position: absolute;
-    left: -550px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
   .wave {
     position: absolute;
-    min-width: 160dvw;
-    height: 100px;
+    width: 200% !important;
+    height: 100px !important;
+    max-width: none !important;
   }
   #wave1 {
     z-index: 10;
     opacity: 1;
-    bottom: 130px;
-    animation: animatewave 4s linear infinite alternate;
+    bottom: 220px;
+    animation: animatewave 4s linear infinite alternate-reverse;
   }
   #wave2 {
     z-index: 9;
     opacity: 0.5;
-    bottom: 135px;
-    animation: animatewave2 4s linear infinite alternate;
+    bottom: 240px;
+    animation: animatewave2 4s linear infinite alternate-reverse;
   }
   #wave3 {
-    z-index: 1000;
+    z-index: 11;
     opacity: 0.2;
-    bottom: 145px;
-    animation: animatewave 3s linear infinite alternate;
+    bottom: 220px;
+    animation: animatewave 6s linear infinite alternate-reverse;
   }
   #wave4 {
-    z-index: 9;
+    z-index: 8;
     opacity: 0.7;
-    bottom: 155px;
-    animation: animatewave2 3s linear infinite alternate;
+    bottom: 240px;
+    animation: animatewave2 6s linear infinite alternate-reverse;
   }
   @keyframes animatewave {
     0% {
-      transform: translateX(700px)
+      transform: translateX(0)
     }
     100% {
-      transform: translateX(0px)
+      transform: translateX(-50%)
     }
   }
   @keyframes animatewave2 {
     0% {
-      transform: translateX(0px)
+      transform: translateX(-50%)
     }
     100% {
-      transform: translateX(700px)
+      transform: translateX(0)
     }
   }
