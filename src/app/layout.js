@@ -122,7 +122,7 @@ export default function RootLayout({}) {
               </div>
             </div>
             <div className="inputs-con">
-              <form id="form" className="input" action="https://formsubmit.co/emiliano.avvisato@gmail.com" method="POST" onSubmit={null} data-netlify="true">
+              <form id="form" className="input" action="https://formsubmit.co/emiliano.avvisato@gmail.com" method="POST" onSubmit={null}>
                 <input id="name" type="text" placeholder="Your name" name="name" required/>
                 <input id="mail" type="email" placeholder="Your mail" name="email" required/>
                 <input id="message" type="text" placeholder="Message" name="msg" required/>
