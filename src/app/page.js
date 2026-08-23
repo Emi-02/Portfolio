@@ -74,7 +74,7 @@ const [formData, setFormData] = useState({ name: '', email: '', msg: '' });
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          message: formData.msg,
+          message: formData.msg || formData.message,
         }),
       });
 
