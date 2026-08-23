@@ -11,7 +11,7 @@ export async function POST(request) {
     }
 
     const data = await resend.emails.send({
-      from: 'Modulo Contatti <emiliano.avvisato@gmail.com>', 
+      from: 'Modulo Contatti <onboarding@resend.dev>', 
       to: ['emiliano.avvisato@gmail.com'],
       subject: `Nuovo messaggio da ${name}`,
       replyTo: email, 
