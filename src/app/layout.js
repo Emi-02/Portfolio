@@ -1,7 +1,8 @@
+'use client';
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Footbar } from "./page";
-import { Navbar } from "./page";
+import { ContactForm, Footbar, Navbar } from "./page";
 import "./footbar.css";
 import "./navbar.css";
 import "./assets/wave.png";
@@ -9,7 +10,9 @@ import "ionicons";
 import { projects } from "./script.js";
 import Image from "next/image";
 import imagec from './assets/c.png';
+import { useState } from 'react';
 
+  
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,12 +24,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Portfolio",
-  description: "My personal portfolio",
-};
-
 export default function RootLayout({}) {
+  
+
   return (
     <html
       lang="en"
@@ -121,15 +121,16 @@ export default function RootLayout({}) {
                 <a href="https://www.linkedin.com/in/emiliano-avvisato-4a9a001b1/" target="blank">Send a message</a>
               </div>
             </div>
-            <div className="inputs-con">
-              <form id="form" className="input" action="https://formsubmit.co/emiliano.avvisato@gmail.com" method="POST" onSubmit={null}>
+            {/* <div className="inputs-con">
+              <form id="form" className="input" onSubmit={null} method="POST">
                 <input id="name" type="text" placeholder="Your name" name="name" required/>
                 <input id="mail" type="email" placeholder="Your mail" name="email" required/>
                 <input id="message" type="text" placeholder="Message" name="msg" required/>
                 <input type="hidden" name="_captcha" value="false"></input>
                 <button className="send" id="send"type="submit">Send message</button>
               </form>
-            </div>
+            </div> */}
+            <ContactForm />
           </div>
         </section>
       </main>

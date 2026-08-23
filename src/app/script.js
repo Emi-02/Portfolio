@@ -25,3 +25,4 @@ export var projects= [{
   "demo": "https://loc-todolist.netlify.app/",
   "code": "https://github.com/Emi-02/To-do-app-1.git"
 }]
+
