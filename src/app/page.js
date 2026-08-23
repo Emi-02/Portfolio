@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import wave from './assets/wave.png';
+import { useState } from 'react';
 
 export default function Home() {
   return (
@@ -50,5 +52,77 @@ export const Navbar = () => {
           <p className="nav-texts">| Contact me</p></a></li>
       </ul>
     </nav>
+  )
+}
+
+export const ContactForm = () => {
+const [formData, setFormData] = useState({ name: '', email: '', msg: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.msg,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus('Message sent!');
+        setFormData({ name: '', email: '', msg: '' });
+      } else {
+        const errorData = await response.json();
+        setStatus(`Error: ${errorData.error || 'Failed to send'}`);
+      }
+    } catch (error) {
+      setStatus('Network error.');
+    }
+  };
+  return (
+<div className="inputs-con">
+  <form id="form" className="input" onSubmit={handleSubmit}>
+    <input 
+      id="name" 
+      type="text" 
+      placeholder="Your name" 
+      name="name" 
+      value={formData.name}
+      onChange={handleChange}
+      required
+    />
+    <input 
+      id="mail" 
+      type="email" 
+      placeholder="Your mail" 
+      name="email" 
+      value={formData.email}
+      onChange={handleChange}
+      required
+    />
+    <input 
+      id="message" 
+      type="text" 
+      placeholder="Message" 
+      name="msg" 
+      value={formData.msg}
+      onChange={handleChange}
+      required
+    />
+    
+    <button className="send" id="send" type="submit">Send message</button>
+    {status && <p style={{ marginTop: '10px', fontSize: '14px', color: status.includes('Error') ? 'red' : 'green' }}>{status}</p>}
+  </form>
+</div>
   )
 }
