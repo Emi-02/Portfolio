@@ -150,7 +150,7 @@ q {
   margin: 1rem auto;
   display: flex;
   position: relative;
-  margin-right: 3rem;
+  margin-right: 4.5rem;
 }
 .skill-card {
   background: var(--blue);
@@ -158,8 +158,8 @@ q {
   border-radius: 24px;
   list-style: none;
   display: flex;
-  gap: 0.7rem;
-  margin: 0.5rem
+  gap: 0.3rem;
+  margin: 0.4rem
 }
 .my-photo {
   border-radius: 50%;
