@@ -47,7 +47,7 @@ export default function RootLayout({}) {
           <div className="col-2">
             <Image width="250" height="300" src={imagec}  alt="" className="my-photo" />
             <ul>
-              <li className="skill-card">+ <p>Attent to detail</p></li>
+              <li className="skill-card">+ <p>Attention to detail</p></li>
               <li className="skill-card">+ <p>Team oriented</p></li>
               <li className="skill-card">+ <p>Responsive design</p></li>
             </ul>
@@ -65,13 +65,13 @@ export default function RootLayout({}) {
             <div className="cont-skills">
             <ul><p>Skills</p>
               <li className="skills"><img src="https://img.icons8.com/?size=25&id=20909&format=png&color=000000" alt="Html" /> <img src="https://img.icons8.com/?size=25&id=21278&format=png&color=000000" alt="Css" /></li>
-              <li className="skills"><img src="https://img.icons8.com/?size=25&id=108784&format=png&color=000000" alt="Javascript" /> <img src="https://img.icons8.com/?size=25&id=nCj4PvnCO0tZ&format=png&color=000000" alt="Typescrip"></img></li>
+              <li className="skills"><img src="https://img.icons8.com/?size=25&id=108784&format=png&color=000000" alt="Javascript" /> <img src="https://img.icons8.com/?size=25&id=nCj4PvnCO0tZ&format=png&color=000000" alt="Typescript"></img></li>
               <li className="skills"><img src="https://img.icons8.com/?size=25&id=40253&format=png&color=D1B307" alt="Jquery" /><img src="https://img.icons8.com/?size=25&id=hsPbhkOH4FMe&format=png&color=000000" alt="Node.js" /></li>
               <li className="skills"><img src="https://img.icons8.com/?size=25&id=123603&format=png&color=000000" alt="React" /><img src="https://img.icons8.com/?size=22&id=kg46nzoJrmTR&format=png&color=E9EDF1" className="express" alt="Express.js" /></li>
               <li className="skills"><img src="https://img.icons8.com/?size=25&id=bosfpvRzNOG8&format=png&color=000000" alt="Mongodb" /><img src="https://img.icons8.com/?size=25&id=62452&format=png&color=000000" alt="Firebase" /></li>
             </ul>
             <ul><p>Soft skills</p>
-              <li className="s-skills">Comunication</li>
+              <li className="s-skills">Communication</li>
               <li className="s-skills">Detail oriented</li>
               <li className="s-skills">Team-work</li>
               <li className="s-skills">Creativity</li>
@@ -117,7 +117,7 @@ export default function RootLayout({}) {
               <div className="button">
                 <ion-icon name="logo-linkedin" className="icon"></ion-icon>
                 <h3 className="title">Linkedin</h3>
-                <p className="l-text">username</p>
+                <p className="l-text">emiliano-avvisato-4a9a001b1</p>
                 <a href="https://www.linkedin.com/in/emiliano-avvisato-4a9a001b1/" target="blank">Send a message</a>
               </div>
             </div>
