@@ -3,9 +3,9 @@ import todo from "./assets/toDoList.png";
 import wProgress from "./assets/wProgress.png"; 
 export var projects= [{
   "img": wProgress,
-  "title": "Hinting",
-  "text": "Hinting is a React native app that helps you look for style inspiration. (It's a work in progress, so the demo only has few functionalities.)",
-  "tags": ["React native", "Redux", "Socket.io", "Axios", "Mongodb", "Stripe", "Auth0", "Aws s3", "Netlify", "Docker", "Express.js"],
+  "title": "isBooked",
+  "text": "A full-stack reservation platform inspired by Booking.com, currently under active development. Designed to handle property searches, real-time availability checks, and end-to-end booking workflows",
+  "tags": ["React.js", "TypeScript", "Node.js", "Express", "MySQL (o MongoDB)", "Stripe", "Auth0", "AWS S3", "Docker"],
   "demo": "demo",
   "code": "repository"
 },

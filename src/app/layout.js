@@ -57,9 +57,9 @@ export default function RootLayout({}) {
         <p className="sub-title">My uniqueness</p>
         <h2 className="page-title">About me</h2>
         <div className="am-container">
-          <div className="am-col-1">
+          {/* <div className="am-col-1">
             <p>Funny GIF</p>
-          </div>
+          </div> */}
           <div className="am-col-2">
             <p className="bio"><span className="accent">Hi, {`I'`}m Emiliano</span>, a Full-Stack Developer with a Computer Science background from the University of Pisa and hands-on experience shipping web and mobile applications to production.
 Over the past year, I have worked on cross-platform products using React, React Native, TypeScript, and Node.js, managing relational and NoSQL databases, cloud storage on AWS, and containerized deployments with Docker.
