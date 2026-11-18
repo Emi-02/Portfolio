@@ -98,7 +98,7 @@ section {
 .home  {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -199,14 +199,14 @@ q {
   margin-block-end: 2rem; 
   width: 80dvw; 
   display: grid;
-  grid-template-columns: 0.5fr 2fr;
+  grid-template-columns: 2fr;
   grid-gap: 2rem;
   align-items: center;
   justify-items: center
 }
 .am-col-1 {
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -214,8 +214,9 @@ q {
 
 .am-col-2{
   position: relative;
+  width: 80%;
   display: grid;
-  grid-template-rows: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
   & .bio {
     align-content: center;
     & .accent {
@@ -224,7 +225,6 @@ q {
   }
 }
 .cont-skills {
-  margin-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -294,7 +294,7 @@ q {
 .proj-card {
   list-style: none;
   border-radius: 18px;
-  margin-block: 2rem;
+  margin-block: 1rem;
   display: flex;
   /* flex-wrap: nowrap; */
 }
@@ -322,6 +322,7 @@ q {
   object-fit: cover;
 }
 .proj-title {
+  font-weight: bold;
   font-size: 18px;
   color: var(--white);
   text-decoration: none;
@@ -331,11 +332,11 @@ q {
   }
 }
 .proj-text {
-  margin: 1rem 0.3rem 0.7rem 0;
+  margin: 0.8rem 0.3rem 0.2rem 0;
   color: #7bb4dc
 }
 .proj-tags {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.6rem;
   color: #415f74;
   font-size: 14px;
 }
