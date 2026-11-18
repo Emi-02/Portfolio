@@ -39,7 +39,7 @@ export default function RootLayout({}) {
           <div className="col-1">
             <h1 className="intro-text">Hi, {`I'`}m</h1>
             <h1 className="intro-title">Emiliano <span className="intro-accent">Avvisato</span></h1>
-            <h1 className="intro-text">A <span className="intro-accent">Junior Full-stack developer</span></h1>
+            <h1 className="intro-text">A <span className="intro-accent">Full-stack developer</span></h1>
             <q>The computer was born to solve problems that did not exist before.<cite> (B. Gates)</cite></q>
             {/* <a className="d-button" href={cv} download>Download CV</a> */}
             <a href="#proj" className="intro-link">Projects</a>
@@ -61,7 +61,9 @@ export default function RootLayout({}) {
             <p>Funny GIF</p>
           </div>
           <div className="am-col-2">
-            <p className="bio"><span className="accent">Hi, {`I'`}m Emiliano</span>, an enthusiastic, curious, and ready to make an impact Junior Full-Stack Developer with a passion for cybersecurity. Fully aware that I am at the beginning of my career, I make up for my lack of extensive field experience with an extraordinary hunger to learn and a strong ability to adapt to new technologies. I am looking for a company that believes in the potential of junior profiles and wants to invest in my professional growth.</p>
+            <p className="bio"><span className="accent">Hi, {`I'`}m Emiliano</span>, a Full-Stack Developer with a Computer Science background from the University of Pisa and hands-on experience shipping web and mobile applications to production.
+Over the past year, I have worked on cross-platform products using React, React Native, TypeScript, and Node.js, managing relational and NoSQL databases, cloud storage on AWS, and containerized deployments with Docker.
+Alongside software engineering, I have a passion for cybersecurity, which allows me to approach development with a strong awareness of vulnerabilities, secure APIs, and modern authentication flows. I thrive in agile, fast-paced teams where I can solve complex technical problems and build products that users love.</p>
             <div className="cont-skills">
             <ul><p>Skills</p>
               <li className="skills"><img src="https://img.icons8.com/?size=25&id=20909&format=png&color=000000" alt="Html" /> <img src="https://img.icons8.com/?size=25&id=21278&format=png&color=000000" alt="Css" /></li>
